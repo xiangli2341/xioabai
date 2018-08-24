@@ -1,0 +1,4 @@
+注册中心：1001       工程名：eureka-server
+
+提供者01：2001      工程名：eureka-provide_01
+提供者02：2002      工程名：eureka-provide_02
