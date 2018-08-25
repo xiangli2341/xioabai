@@ -1,0 +1,24 @@
+项目1.1
+-------------
+注册中心：1001      工程名：eureka-server            hostname：localhost
+提供者01：2001      工程名：hello-service            hostname：
+提供者02：2002      工程名：hello-service            hostname：
+eureka.client.service-url.defaultZone=http://localhost:1001/eureka/
+
+
+项目1.2
+-------------
+注册中心：1001       工程名：eureka-server   hostname：localhost
+提供者01：2001       工程名：eureka-service  hostname：eureka
+提供者02：2002       工程名：eureka-service  hostname：eureka1
+
+项目2  ribbon
+-------------
+注册中心：    1001       工程名：eureka-server   hostname：localhost
+-
+提供者01：    2001       工程名：eureka-service  hostname：eureka
+-
+提供者02：    2002       工程名：eureka-service  hostname：eureka1
+-
+Ribbon消费者：3001       工程名：Ribbon-Consumer
+#providers这个是自己命名的，ribbon,listOfServer这两个是规定的
